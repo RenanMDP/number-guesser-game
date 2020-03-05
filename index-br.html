@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <title>Advinhe o Número</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Renan Martineli de Paula" />
+    <meta name="description" content="jogo Advinhe o Número" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1>Advinhe o Número!</h1>
+      </header>
+      
+      <div class="rounds">
+        <p class="round-label">Partida <span id="round-number">1</span></p>
+        <p class="guess-label">Número Alvo: <span id="target-number">?</span></p>
+      </div>
+
+      <div class="guessing-area">
+        <div class="guess computer-guess">
+          <div class="guess-title">
+            <p class="guess-label">Computador</p>
+            <p class="score-label">Placar: <span id="computer-score">0</span></p>
+          </div>
+          <p id="computer-guess">?</p>
+          <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label">Jogador</p>
+            <p class="score-label">Placar: <span id="human-score">0</span></p>
+          </div>
+          <input type="number" id="human-guess" min="0" max="9" value="0">
+          <div class="number-controls">
+            <button class="number-control left" id="subtract" disabled>-</button>
+            <button class="number-control right" id="add">+</button>
+          </div>
+          <button class="button" id="guess">Dê o Chute!</button>
+        </div>
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="next-round" disabled>Próxima Partida</button>
+      </div>
+
+    </div>
+    
+    <div class="instructions">
+      <div class="instruction">
+        <h3>Passo 1</h3>
+        <p>Insira um número entre 0 e 9</p>
+      </div>
+      <div class="instruction">
+        <h3>Passo 2</h3>
+        <p>Clique "Dê o Chute" para mandar seu número e ver quem ganhou a partida.</p>
+      </div>
+      <div class="instruction">
+        <h3>Passo 3</h3>
+        <p>Ganha quem chutar corretamente o "Número Alvo". Caso ninguém acerte, 
+          o número mais próximo ganhará. Em caso de empate, sempre ganha o jogador.
+        </p>
+      </div>
+      <div class="instruction">
+        <h3>Passo 4</h3>
+        <p>Clique em "Próxima Partida" para jogar novamente.</p>
+      </div>
+    </div>
+
+    <div id="idiom-div">
+      <a href="index.html">
+        <img src="images/united_kingdom_640.png" alt="english language" />
+      </a>
+      <a href="index-br.html">
+        <img  id="pt-flag" src="images/portugal_640.png" alt="idioma português" />
+      </a>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./game-br.js"></script>
+  </body>
+</html>
