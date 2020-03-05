@@ -193,3 +193,28 @@ input[type=number]::-webkit-inner-spin-button {
   color: #ec3636;
   font-weight: 700;
 }
+
+/* My CSS */
+
+#idiom-div {
+  border: 2px solid black;
+  height: fit-content;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+#idiom-div img {
+  display: block;
+  width: 5vh;
+  height: auto;
+  padding: 5px;
+}
+
+#pt-flag {
+  border-top: 2px solid black;
+}
+
+#idiom-div img:hover {
+  background-color: rgba(81, 156, 156);
+}
