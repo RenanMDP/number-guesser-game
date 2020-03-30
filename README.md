@@ -1,6 +1,6 @@
 ## Number Guesser game
 
-✔ Made with pure JavaScript, CSS3 and HTML5
+✔ Built with pure JavaScript, CSS3 and HTML5.
 
 ✔ Submit a guess. Wins whoever guesses the "Target Number".
 
@@ -8,7 +8,7 @@
 
 ## Jogo do Adivinhe o Número
 
-✔ Feito com JavaScript puro, CSS3 e HTML5
+✔ Construído com JavaScript puro, CSS3 e HTML5.
 
 ✔ Chute um número. Ganha quem chutar corretamente o "Número Alvo".
 
